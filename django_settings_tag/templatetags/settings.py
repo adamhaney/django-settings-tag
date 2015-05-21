@@ -6,6 +6,6 @@ from django.conf import settings
 register = template.Library()
 
 
-@register.simple_tag(name='get_setting')
-def get_setting(attr):
+@register.simple_tag(name='settings')
+def settings(attr):
     return getattr(settings, attr)
