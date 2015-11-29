@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import os
-from setuptools import setup
+from setuptools import setup, find_packages
 
 
 DESCRIPTION = (
@@ -33,7 +33,7 @@ setup(
     license="LGPL",
     keywords="Django, observer",
     url="https://github.com/adamhaney/django-settings-tag",
-    packages=['django_settings_tag'],
+    packages=find_packages(),
     long_description=read('README.md'),
     dependency_links=[],
     install_requires=[
